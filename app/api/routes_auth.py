@@ -16,3 +16,6 @@ def login(auth: AuthInput):
         token = create_token({'sub': auth.username})
         return {'access_token': token}
     return {'error': 'Invalid Credentials'}
+
+
+    
